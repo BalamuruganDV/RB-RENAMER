@@ -1,4 +1,4 @@
-# (c) @Aadhi000
+
 
 from typing import Union
 from pyromod import listen
@@ -27,8 +27,8 @@ class Client(RawClient, New):
 
     async def start(self):
         await super().start()
-        log.info("Bot Started!")
+        log.info("𝙱𝚘𝚝-𝚂𝚝𝚊𝚛𝚝𝚎𝚍!")
 
     async def stop(self, *args):
         await super().stop()
-        log.info("Bot Stopped!")
+        log.info("𝙱𝚘𝚝-𝚂𝚝𝚘𝚙𝚙𝚎𝚍!")
