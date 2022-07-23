@@ -59,26 +59,26 @@ class NormalRename:
                 f"{Config.DOWNLOAD_DIR}/{chat_id}/{time.time()}/",
                 progress=progress_for_pyrogram,
                 progress_args=(
-                    "Downloading ...",
+                    "𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙸𝙽𝙶 ...",
                     editable,
                     c_time
                 )
             )
             if not os.path.exists(dl_file_path):
-                return None, "File not found!"
+                return None, "𝙵𝙸𝙻𝙴 𝙽𝙾𝚃 𝙵𝙾𝚄𝙽𝙳!"
             try:
-                await editable.edit("𝙿𝚕𝚎𝚊𝚜𝚎 𝚆𝚊𝚒𝚝...")
+                await editable.edit("𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃...")
             except MessageNotModified: pass
 
             try:
                 c_time = time.time()
                 file = await self.save_file(dl_file_path, progress=progress_for_pyrogram, progress_args=(
-                    "Uploading ...",
+                    "𝚄𝙿𝙻𝙾𝙳𝙸𝙽𝙶...",
                     editable,
                     c_time
                 ))
 
-                await editable.edit("𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 ...")
+                await editable.edit("𝙿𝚁𝙾𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻...")
                 upload_as_doc = await db.get_upload_as_doc(chat_id)
                 has_db_thumb = await db.get_thumbnail(chat_id)
                 width = kwargs.get("width", 0)
@@ -106,7 +106,7 @@ class NormalRename:
                 elif (upload_as_doc is False) and (upload_mode == "video"):
                     duration = kwargs.get("duration", 0)
                     if not duration:
-                        await editable.edit("𝙵𝚎𝚝𝚌𝚑𝚒𝚗𝚐 𝚅𝚒𝚍𝚎𝚘 𝙳𝚞𝚛𝚊𝚝𝚒𝚘𝚗 ...")
+                        await editable.edit("𝙵𝙴𝚃𝙲𝙷𝙸𝙽𝙶 𝚅𝙸𝙳𝙴𝙾 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 ...")
                         duration, _, __ = await get_video_info(dl_file_path)
                     media = raw.types.InputMediaUploadedDocument(
                         mime_type=self.guess_mime_type(dl_file_path) or "video/mp4",
@@ -145,7 +145,7 @@ class NormalRename:
                     )
 
                 else:
-                    await editable.edit("𝙸 𝙲𝚊𝚗'𝚝 𝚁𝚎𝚗𝚊𝚖𝚎 𝚃𝚑𝚒𝚜 𝚃𝚢𝚙𝚎 𝙾𝚏 𝙼𝚎𝚍𝚒𝚊!")
+                    await editable.edit("𝙸 𝙲𝙰𝙽'𝚝 𝚁𝙴𝙽𝙰𝙼𝙴 𝚃𝙷𝙸𝚂 𝚃𝚈𝙿𝙴 𝙾𝙵 𝙼𝙴𝙳𝙸𝙰!")
                     await rm_file(dl_file_path)
                     return None, "InvalidMedia"
 
