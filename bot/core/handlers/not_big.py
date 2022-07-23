@@ -23,7 +23,7 @@ async def handle_not_big(
     if (not _db_caption) and (apply_caption is True):
         caption = m.reply_to_message.caption.markdown \
             if m.reply_to_message.caption \
-            else "**Developer: @AbirHasan2005**"
+            else "**𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁: [𝙱𝙰𝙻𝙰𝙼𝚄𝚁𝚄𝙶𝙰𝙽](https://t.me/balaSmurugan)**"
     elif _db_caption and (apply_caption is True):
         caption = _db_caption
     else:
