@@ -1,3 +1,4 @@
+
 # (c) @AbirHasan2005
 
 import os
@@ -66,7 +67,7 @@ class NormalRename:
             if not os.path.exists(dl_file_path):
                 return None, "File not found!"
             try:
-                await editable.edit("Please Wait ...")
+                await editable.edit("𝙿𝚕𝚎𝚊𝚜𝚎 𝚆𝚊𝚒𝚝...")
             except MessageNotModified: pass
 
             try:
@@ -77,7 +78,7 @@ class NormalRename:
                     c_time
                 ))
 
-                await editable.edit("Processing Thumbnail ...")
+                await editable.edit("𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 ...")
                 upload_as_doc = await db.get_upload_as_doc(chat_id)
                 has_db_thumb = await db.get_thumbnail(chat_id)
                 width = kwargs.get("width", 0)
@@ -105,7 +106,7 @@ class NormalRename:
                 elif (upload_as_doc is False) and (upload_mode == "video"):
                     duration = kwargs.get("duration", 0)
                     if not duration:
-                        await editable.edit("Fetching Video Duration ...")
+                        await editable.edit("𝙵𝚎𝚝𝚌𝚑𝚒𝚗𝚐 𝚅𝚒𝚍𝚎𝚘 𝙳𝚞𝚛𝚊𝚝𝚒𝚘𝚗 ...")
                         duration, _, __ = await get_video_info(dl_file_path)
                     media = raw.types.InputMediaUploadedDocument(
                         mime_type=self.guess_mime_type(dl_file_path) or "video/mp4",
@@ -144,7 +145,7 @@ class NormalRename:
                     )
 
                 else:
-                    await editable.edit("I can't rename this type of media!")
+                    await editable.edit("𝙸 𝙲𝚊𝚗'𝚝 𝚁𝚎𝚗𝚊𝚖𝚎 𝚃𝚑𝚒𝚜 𝚃𝚢𝚙𝚎 𝙾𝚏 𝙼𝚎𝚍𝚒𝚊!")
                     await rm_file(dl_file_path)
                     return None, "InvalidMedia"
 
