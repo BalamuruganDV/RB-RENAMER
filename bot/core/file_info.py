@@ -5,7 +5,7 @@ from pyrogram.types import Message
 
 def get_media_file_name(message: Message):
     """
-    Pass Message object of audio or document or sticker or video or animation to get file_name.
+    𝙿𝚊𝚜𝚜 𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝚘𝚋𝚓𝚎𝚌𝚝 𝚘𝚏 𝚊𝚞𝚍𝚒𝚘 𝚘𝚛 𝚍𝚘𝚌𝚞𝚖𝚎𝚗𝚝 𝚘𝚛 𝚜𝚝𝚒𝚌𝚔𝚎𝚛 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘 𝚘𝚛 𝚊𝚗𝚒𝚖𝚊𝚝𝚒𝚘𝚗 𝚝𝚘 𝚐𝚎𝚝 𝚏𝚒𝚕𝚎_𝚗𝚊𝚖𝚎.
     """
 
     media = message.audio or \
@@ -22,7 +22,7 @@ def get_media_file_name(message: Message):
 
 def get_media_file_size(message: Message):
     """
-    Pass Message object of audio or document or photo or sticker or video or animation or voice or video_note to get file_size.
+    𝙿𝚊𝚜𝚜 𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝚘𝚋𝚓𝚎𝚌𝚝 𝚘𝚏 𝚊𝚞𝚍𝚒𝚘 𝚘𝚛 𝚍𝚘𝚌𝚞𝚖𝚎𝚗𝚝 𝚘𝚛 𝚙𝚑𝚘𝚝𝚘 𝚘𝚛 𝚜𝚝𝚒𝚌𝚔𝚎𝚛 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘 𝚘𝚛 𝚊𝚗𝚒𝚖𝚊𝚝𝚒𝚘𝚗 𝚘𝚛 𝚟𝚘𝚒𝚌𝚎 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘_𝚗𝚘𝚝𝚎 𝚝𝚘 𝚐𝚎𝚝 𝚏𝚒𝚕𝚎_𝚜𝚒𝚣𝚎.
     """
 
     media = message.audio or \
@@ -42,7 +42,7 @@ def get_media_file_size(message: Message):
 
 def get_media_mime_type(message: Message):
     """
-    Pass Message object of audio or document or video to get mime_type
+    𝙿𝚊𝚜𝚜 𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝚘𝚋𝚓𝚎𝚌𝚝 𝚘𝚏 𝚊𝚞𝚍𝚒𝚘 𝚘𝚛 𝚍𝚘𝚌𝚞𝚖𝚎𝚗𝚝 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘 𝚝𝚘 𝚐𝚎𝚝 𝚖𝚒𝚖𝚎_𝚝𝚢𝚙𝚎
     """
 
     media = message.audio or \
@@ -57,7 +57,7 @@ def get_media_mime_type(message: Message):
 
 def get_media_file_id(message: Message):
     """
-    Pass Message object of audio or document or photo or sticker or video or animation or voice or video_note to get file_id.
+    𝙿𝚊𝚜𝚜 𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝚘𝚋𝚓𝚎𝚌𝚝 𝚘𝚏 𝚊𝚞𝚍𝚒𝚘 𝚘𝚛 𝚍𝚘𝚌𝚞𝚖𝚎𝚗𝚝 𝚘𝚛 𝚙𝚑𝚘𝚝𝚘 𝚘𝚛 𝚜𝚝𝚒𝚌𝚔𝚎𝚛 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘 𝚘𝚛 𝚊𝚗𝚒𝚖𝚊𝚝𝚒𝚘𝚗 𝚘𝚛 𝚟𝚘𝚒𝚌𝚎 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘_𝚗𝚘𝚝𝚎 𝚝𝚘 𝚐𝚎𝚝 𝚏𝚒𝚕𝚎_𝚒𝚍.
     """
 
     media = message.audio or \
